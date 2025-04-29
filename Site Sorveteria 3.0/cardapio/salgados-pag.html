@@ -8,83 +8,94 @@
     <style>
         :root {
             --cor0: #fafaeb;
-            --cor1: #89CAD9;
-            --cor2: #8c6f11;
+            --cor1: #7bc6e9;
+            --cor2: #8a7224;
             --cor3: #ce0700;
             --cor4: #000000;
         }
 
         * {
-            margin: 0px;
-            padding: 0px;
+        margin: 0px;
+        padding: 0px;
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        /* CABEÇA */
+
         header {
             background-color: var(--cor1);
-            padding-top: 40px;
-            min-height: 60px;
+            padding-top: 30px; /* alterado */
         }
 
         header > h1 {
             color: var(--cor3);
             text-align: center;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 2px black;
+            text-shadow: 1px 2px 2px black; /* alterado */
         }
 
-        header > p {
+        header > p { /* houve grande aulteração */
             color: var(--cor4);
             font-size: 1.1em;
-            text-align: left;
-            text-indent: 10px;
-            font-weight: bold;
-            padding-right: 20px;
-            padding-left: 20px;
+            text-align: center;
+            font-weight: bolder;
+            padding-bottom: 15px;
             text-shadow: 0px 0px 1px black;
         }
 
-        nav {
+        nav { /* houve grande aulteração */
             background-color: var(--cor1);
-            padding: 10px;
+            padding-bottom: 14px;
+            text-align: center;
         }
 
-        nav > a {
+        nav > a { /* houve grande aulteração */
             color: var(--cor3);
             text-decoration: none;
-            font-weight: bold;
-            padding: 10px;
+            font-weight: bolder;
+            padding: 10px 20px;
             border-radius: 10px;
-            text-shadow: 0px 1px 1px black;
+            text-shadow: 1px 1px 1px black;
+            margin: 0px 2px;
         }
 
         nav > a:hover {
             background-color: var(--cor0);
         }
 
+        nav > a:visited { /* add */
+            background-color: none;
+        }
+
+        nav > a:active { /* add */
+            background-color: none;
+        }
+
         .salgados {
             background-color: var(--cor0);
-            padding-bottom: 13px;
+            padding-bottom: 15px;
             border-bottom-left-radius: 0px;
             border-bottom-right-radius: 0px;
         }
 
+        /* CORPO */
+
         main {
             background-color: var(--cor0);
-            min-height: 500px;
+            min-height: 400px;
             max-width: 1000px;
             margin: auto;
-            padding: 10px;
+            padding: 5px;
         }
 
         main h1 {
             color: var(--cor2);
-            text-indent: 20px;
             font-weight: bolder;
-            padding: 10px;
+            padding-top: 10px;
+            padding-left: 20px;
             text-shadow: 1px 1px 2px black;
         }
 
@@ -92,7 +103,7 @@
             color: var(--cor2);
             text-indent: 20px;
             font-weight: bolder;
-            padding: 10px;
+            padding: 5px;
             text-shadow: 1px 1px 2px black;
         }
 
@@ -104,23 +115,24 @@
         ul {
             list-style-position: inside;
             padding: 5px;
-            margin-left: 0px;
         }
 
         li {
             padding: 5px;
-            font-weight: bold;
+            font-weight: bolder;
             font-size: 1.3em;
         }
 
         i {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: normal;
         }
 
         .pastel-doce {
             font-size: 14px;
         }
+
+        /* RODA PÉ */
 
         footer {
             background-color: var(--cor1);
@@ -129,11 +141,6 @@
             padding: 10px;
             font-weight: bold;
             text-shadow: 1px 1px 1px black;
-            box-shadow: 1px 1px 3px black;
-        }
-
-        footer p {
-            margin: auto;
         }
     </style>
 </head>
@@ -150,7 +157,7 @@
     </nav>
     <main>
         <h1>Pastéis:</h1>
-        <p>O valor de cada pastel é: $1,00</p>
+        <p>O valor de cada pastel é: R$1,00</p>
         <ul>
             <li>Pastel de Pizza</li>
             <li>Pastel de Carne</li>
@@ -161,7 +168,7 @@
         </ul>
 
         <h2>Pastéis Doces:</h2>
-        <p>O valor de cada pastel doce é: $2,50</p>
+        <p>O valor de cada pastel doce é: R$2,50</p>
         <ul class="pastel-doce">
             <li>Pastel de Creme de Leite Ninho</li>
             <li>Pastel de Creme de Morango</li>
@@ -170,11 +177,11 @@
 
         <h1>Mais salgados:</h1>
         <ul>
-            <li>Coxinha de Frango - <i>$2,00</i></li>
-            <li>Risoles de Carne - <i>$2,00</i></li>
-            <li>Enroladinho de Vina - <i>$5,00</i></li>
-            <li>Empadinha - <i>$6,00</i></li>
-            <li>Empadão - <i>$10,00</i></li>
+            <li>Coxinha de Frango <i>- R$2,00</i></li>
+            <li>Risoles de Carne <i>- R$2,00</i></li>
+            <li>Enroladinho de Vina <i>- R$5,00</i></li>
+            <li>Empadinha <i>- R$6,00</i></li>
+            <li>Empadão <i>- R$10,00</i></li>
         </ul>
     </main>
     <footer>
