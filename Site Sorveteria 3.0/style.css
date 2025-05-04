@@ -54,6 +54,10 @@ section {
     background-color: orange;
     height: 50vh;
     margin-bottom: 10px;
+
+    background-image: url(./imagens/banner-principal-bomgosto.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 div {
@@ -68,10 +72,30 @@ div {
     display: inline-block;
     width: 225px;
     height: 225px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 div:hover {
     background-color: rgb(73, 73, 73);
+}
+
+div.sorvete {
+    background-image: url(./imagens/sorvete-img.webp);
+}
+
+div.salgado {
+    background-image: url(./imagens/pastel-2-img.png);
+}
+
+div.açai {
+    background-image: url(./imagens/açai-img.png);
+}
+
+div.torta {
+    background-image: url(./imagens/torta-img.png);
 }
 
 /* footer */
