@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bom Gosto</title>
-    <link rel="shortcut icon" href="imagens/icon bom gosto.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens/icon bom gosto.jpeg" type="image/x-icon">
     <style>
         :root {
     --cor0: #ebebeb;
-    --cor1: #7bc6e9; /* colocar está cor nas outras */
+    --cor1: #7bc6e9;
     --cor2: #8C2711;
     --cor3: #ce0700;
     --cor4: #000000;
@@ -27,17 +27,33 @@
 
     header {
         background-color: var(--cor1);
-        padding-top: 30px; /* alterado */
+        padding-top: 30px;
+    }
+
+    button {
+        background-color: rgb(243, 242, 242);
+        margin-left: 10px;
+        border: 2px solid red;
+        padding: 5px;
+    }
+
+    button > a {
+        color: black;
+        text-decoration: none;
+    }
+
+    button:hover {
+        background-color: rgb(214, 214, 214);
     }
 
     header > h1 {
         color: var(--cor3);
         text-align: center;
         margin-bottom: 20px;
-        text-shadow: 1px 2px 2px black; /* alterado */
+        text-shadow: 1px 2px 2px black;
     }
 
-    header > p { /* houve grande aulteração */
+    header > p { 
         color: var(--cor4);
         font-size: 1.1em;
         text-align: center;
@@ -46,13 +62,13 @@
         text-shadow: 0px 0px 1px black;
     }
 
-    nav { /* houve grande aulteração */
+    nav { 
         background-color: var(--cor1);
         padding-bottom: 14px;
         text-align: center;
     }
 
-    nav > a { /* houve grande aulteração */
+    nav > a { 
         color: var(--cor3);
         text-decoration: none;
         font-weight: bolder;
@@ -66,48 +82,50 @@
         background-color: var(--cor0);
     }
 
-    nav > a:visited { /* add */
+    nav > a:visited { 
         background-color: none;
     }
 
-    nav > a:active { /* add */
+    nav > a:active { 
         background-color: none;
     }
 
     .Sorvete {
         background-color: var(--cor0);
-        padding-bottom: 15px; /* Alterado */
+        padding-bottom: 15px; 
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
     /* CORPO */
 
-    main { /* houve grande aulteração */
+    main { 
         background-color: var(--cor0);
-        min-height: 400px;
+        min-height: 500px;
         max-width: 1000px;
         margin: auto;
         padding: 5px;
     }
 
-    main h1 { /* houve grande aulteração */
+    main h1 { 
         color: var(--cor2);
         font-weight: bolder;
         padding-top: 10px;
         padding-left: 20px;
         text-shadow: 1px 1px 2px black;
+        text-decoration: underline;
     }
 
     main h2 {
         color: var(--cor2);
         text-align: center;
         font-weight: bolder;
-        padding: 5px; /* alterado */
+        padding: 5px; 
         text-shadow: 1px 1px 2px black;
+        text-decoration: underline;
     }
 
-    ul { /* houve grande aulteração */
+    ul { 
         list-style-position: inside;
         padding: 5px;
     }
@@ -115,7 +133,7 @@
     li {
         padding: 5px;
         font-weight: bold;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     section {
@@ -123,7 +141,7 @@
     }
 
     aside {
-        font-size: 13px;
+        font-size: 11px;
         font-weight: bolder;
         display: inline-block;
         text-align: justify;
@@ -131,7 +149,7 @@
 
     li > a {
         color: black;
-        font-size: 13px;
+        font-size: 14px;
         text-decoration: dashed;
         font-style: italic;
         font-weight: normal;
@@ -144,7 +162,7 @@
 
     i {
         font-weight: normal;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     /* RODA PÉ */
@@ -161,11 +179,14 @@
 </head>
 <body>
     <header>
+        <button>
+            <a href="../index.html">Inicio</a>
+        </button>
         <h1>Sejá Bem-vindo(a)</h1>
         <p>Confira nossos cardapios abaixo:</p>
     </header>
     <nav>
-        <a class="Sorvete">Sorvetes</a>
+        <a class="Sorvete">Sorvete</a>
         <a href="salgados-pag.html">Salgados</a>
         <a href="açai-pag.html">Açaí</a>
         <a href="tortas-pag.html">Tortas</a>
@@ -178,7 +199,7 @@
             <li>Cestinha, <i>3 sabores - R$10,00</i></li>
         </ul>
 
-        <h1>Sorvetes:</h1>
+        <h1>Sabores:</h1>
         <ul>
             <li>Abacaxi ao Vinho</li>
             <li>Banoffe</li>

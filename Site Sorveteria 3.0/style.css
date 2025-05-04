@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #52bed6;
+}
+
 * {
     margin: 0px;
 }
@@ -12,34 +16,32 @@ body {
 /* cabeça */
 
 header {
-    background-color: #62c2d8;
+    background-color: var(--cor1);
     padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
 }
 
-header h1 {
-    display: inline;
+img {
+    width: 90px;
+    margin-left: 20px;
 }
 
-header nav {
-    display: inline;
-}
-
-nav > p {
-    display: inline;
-    padding-left: 10px;
-    font-weight: bolder;
-}
-
-nav > p > a {
+a {
     text-decoration: none;
     color: white;
-    text-shadow: 1px 1px 1px black;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
 }
 
-nav > p > a:hover {
+a:hover {
     text-decoration: underline;
+}
+
+nav {
+    background-color: var(--cor1);
+    text-indent: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 /* corpo */
@@ -51,14 +53,21 @@ main {
 section {
     background-color: orange;
     height: 50vh;
+    margin-bottom: 10px;
 }
 
 div {
     background-color: gray;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 5px black;
+
     display: inline-block;
-    
-    margin: 15px;
-    padding: 150px;
+    width: 225px;
+    height: 225px;
 }
 
 div:hover {
