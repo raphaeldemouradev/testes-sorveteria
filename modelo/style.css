@@ -72,7 +72,7 @@ footer > p {
 }
 
 footer {
-    background-color: #62c2d8;
+    background-color: var(--cor1);
     text-align: center;
     padding: 10px;
 }
